@@ -68,6 +68,7 @@ jobs:
         - npm i && npm i typescript
         - npx react-native init app && cd app
         - npm i react-native-amap3d@next
+        - cd ios && pod install && cd ..
         - npx react-native run-ios
 
 stages:
