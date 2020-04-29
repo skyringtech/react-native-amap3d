@@ -79,15 +79,15 @@ export interface MarkerProps {
     /**
      * 拖放开始事件
      */
-    onDragStart?: () => void;
+    onAMapDragStart?: () => void;
     /**
      * 拖放进行事件，类似于 mousemove，在结束之前会不断调用
      */
-    onDrag?: () => void;
+    onAMapDrag?: () => void;
     /**
      * 拖放结束事件，最终坐标将传入参数
      */
-    onDragEnd?: (coordinate: LatLng) => void;
+    onAMapDragEnd?: (coordinate: LatLng) => void;
     /**
      * 信息窗体点击事件
      *
